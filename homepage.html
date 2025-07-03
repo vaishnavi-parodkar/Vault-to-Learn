@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes Homepage</title>
+    <link rel="stylesheet" href="homepage.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Vault to Learn</div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#login" class="btn-login" onclick="loginpage()">Login/Sign-up</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Organize Your Notes Easily</h1>
+            <p>Your one-stop solution to access and Learn variety of topics efficiently.</p>
+            <button onclick="scrollToSection('features')" class="cta-btn">Explore Features</button>
+        </section>
+
+        <section id="features" class="features">
+            <h2>Features</h2>
+            <div class="feature-cards">
+                <div class="card">
+                    <h3>Easy to Use</h3>
+                    <p>Simple and intuitive interface for seamless notes website.</p>
+                </div>
+                <div class="card">
+                    <h3>Secure Authentication</h3>
+                    <p>Sign up and login functionality to keep your notes safe and private.</p>
+                </div>
+                <div class="card">
+                    <h3>Organized</h3>
+                    <p>Orginized as per topics for effective learning.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <h2>About Us</h2>
+            <p>We are dedicated to helping you stay productive and organized with our powerful note management system.
+            </p>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Contact Us</h2>
+            <form id="contactForm">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <textarea id="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <script>
+
+        function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            if (section) {
+              section.scrollIntoView({ behavior: "smooth" });
+            }
+          }
+        
+          document
+            .getElementById("contactForm")
+            .addEventListener("submit", function (event) {
+              event.preventDefault();
+          
+              const name = document.getElementById("name").value;
+              const email = document.getElementById("email").value;
+              const message = document.getElementById("message").value;
+          
+              if (name && email && message) {
+                alert(`Thank you, ${name}! Your message has been sent.`);
+                this.reset();
+              } else {
+                alert("Please fill out all fields before submitting.");
+              }
+            });
+        
+            
+        function loginpage(){
+            window.location.href = 'loginpage.html';
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internal Notes</title>
+    <link rel="stylesheet" href="internalnotespage.css">
+   
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Vault to Learn</div>
+            <ul class="nav-links">
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="homepage.html">Features</a></li>
+                <li><a href="homepage.html">About</a></li>
+                <li><a href="homepage.html">Contact</a></li>
+                <li><a href="#login" class="btn-login" onClick="loginpage()">Log out</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main-container">
+        <div class="subject-box">
+            <h2>Discrete Mathematics</h2>
+            <img src="dm.png">
+            <button onclick="goToVideo('https://youtu.be/r8G6dxvBDmg?si=8_-EdfF0M5eeZxr-')">Watch DM Videos</button>
+        </div>
+
+        <div class="subject-box">
+            <h2>Microprocessors and Microcontrollers</h2>
+            <img src="mpmc.png">
+            <button onclick="goToVideo('https://youtu.be/jte2S2iWRMI?si=-UgTgpy8fzoKnpFb')">Watch MPMC Videos</button>
+        </div>
+
+        <div class="subject-box">
+            <h2>Object Oriented Software Engineering</h2>
+            <img src="oose.png">
+            <button onclick="goToVideo('https://youtu.be/NlLM3sVF8wY?si=8MVPoEgNpGyxEmRx')">Watch OOSE Videos</button>
+        </div>
+
+        <div class="subject-box">
+            <h2>Economics for Engineers</h2>
+            <img src="eco.png">
+            <button onclick="goToVideo('https://youtu.be/0Zt7xTyELNc?si=9kBcNSita6dhM3AH')">Watch ECO Videos</button>
+        </div>
+
+        <div class="subject-box">
+            <h2>Formal Language and Automata Theory</h2>
+            <img src="flat.png">
+            <button onclick="goToVideo('https://youtube.com/@automatatheorywithamey6961?si=IHQ-csc5eYXgB1A4')">Watch FLAT Videos</button>
+        </div>
+
+        <div class="subject-box">
+            <h2>Modern Algorithm Design Foundation</h2>
+            <img src="madf.png">
+            <button onclick="goToVideo('https://youtube.com/playlist?list=PLdo5W4Nhv31bbKJzrsKfMpo_grxuLl8LU&si=MeWnTGiv8TdrqdSc')">Watch MADF Videos</button>
+        </div>
+    </div>
+
+    <script>
+        function goToVideo(url) {
+            window.location.href = url;
+        }
+        function loginpage() {
+           window.location.href='loginpage.html';
+        }
+    </script>
+</body>
+</html>

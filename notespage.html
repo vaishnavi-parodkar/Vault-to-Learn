@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Notes</title>
+  <link rel="stylesheet" href="notespage.css"/>
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <div class="logo">Vault to Learn</div>
+      <ul class="nav-links">
+        <li><a href="homepage.html">Home</a></li>
+        <li><a href="homepage.html">Features</a></li>
+        <li><a href="homepage.html">About</a></li>
+        <li><a href="homepage.html">Contact</a></li>
+        <li><a href="#login" class="btn-login" onclick="loginpage()">Log out</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="box">
+      <p>Semester 4</p>
+      <img src="notes.png" alt="Notes">
+      <button onclick="link('https://drive.google.com/drive/folders/1FGK1NtTnhBAYU1TlHCCnkaRGL3BJZr3y')">Click Here</button>
+    </div>
+
+    <div class="box">
+      <p>Lecture Videos</p>
+      <img src="youtube.png" alt="Videos">
+      <button onclick="next()">Click Here</button>
+    </div>
+
+    <div class="box">
+      <p>Semester 4 PYQ</p>
+      <img src="exam-image.png" alt="Exam">
+      <button onclick="link('https://drive.google.com/drive/folders/1o7ALjm2AMDjRkSKXwHCk9IKJhT7BlLUZ?usp=share_link')">Click Here</button>
+    </div>
+
+    <div class="box">
+      <p>Javascript Course</p>
+      <img src="youtube.png" alt="JS">
+      <button onclick="link('https://youtu.be/EerdGm-ehJQ?si=9gqTP1Y9czjnvxIb')">Click Here</button>
+    </div>
+
+    <div class="box">
+      <p>DSA Notes</p>
+      <img src="dsa-notes.png" alt="DSA">
+      <button onclick="link('https://www.vidyalankar.org/infinite/assets/docs/study-material/cse-module-3.pdf')">Click Here</button>
+    </div>
+
+    <div class="box">
+      <p>Web Dev Notes</p>
+      <img src="webdev-image.png" alt="Web Dev">
+      <button onclick="link('https://www.geeksforgeeks.org/web-development/')">Click Here</button>
+    </div>
+  </div>
+
+  <script>
+    function next(){
+      window.location.href = 'internalnotespage.html';
+    }
+    function link(url){
+      window.location.href = url;
+    }
+    function loginpage(){
+     window.location.href = 'loginpage.html';
+    }
+  </script>
+</body>
+</html>
