@@ -22,7 +22,7 @@
 
 <style>
     body {
-        background-image: url('computer.png');
+        background-image: url('/assets/computer.png');
     }
 
     .logo{
@@ -135,8 +135,6 @@
 
 </style>
 
-
-
 <div class="container">
     <p class="login-title">Login</p>
 
@@ -167,10 +165,8 @@
 <script>
     function signup() {
         const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
-        const email = document.querySelector('.js-login-bar').value; // Capture the email input value
-        // Capture the password
+        const email = document.querySelector('.js-login-bar').value; 
 
-        // Validate the email input using the regex
         if (!emailPattern.test(email)) {
             document.querySelector('.js-email-error').innerHTML = "Inavlid email";
         }
@@ -188,22 +184,20 @@
         if (email === "") {
             document.querySelector('.js-email-error').innerHTML = "Please enter your email";
         } else {
-            document.querySelector('.js-email-error').innerHTML = ""; // Clear the error if the email is entered
+            document.querySelector('.js-email-error').innerHTML = ""; 
         }
 
         if (password === "") {
             document.querySelector('.logged-in').innerHTML = "Please enter your password";
         } else {
-            document.querySelector('.logged-in').innerHTML = ""; // Clear the error if the password is entered
+            document.querySelector('.logged-in').innerHTML = ""; 
         }
 
         if (email !== "" && password !== "") {
-            // If both fields are filled, proceed to the next page
             document.querySelector('.logged-in').innerHTML = 'Logged in successfully';
             window.location.href = 'notescopy.html';
         }
 
-        // Send the email and password to the server
         fetch('http://localhost:3000/login', {
             method: 'POST',
             headers: {
@@ -225,16 +219,11 @@
                 document.querySelector('.logged-in').innerHTML = 'Login failed!';
             });
     }
-
-
     function keypress(event) {
         if (event.key === 'Enter') {
             signup();
         }
     }
-
-
-
 </script>
 </body>
 </html>
