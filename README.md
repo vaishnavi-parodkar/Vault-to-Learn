@@ -83,6 +83,12 @@ Go to http://localhost:3000 in your browser.
 
 2. Create a new branch (git checkout -b feature/YourFeature).
 
+3. Make your changes and commit (git commit -m 'Add your feature').
+
+4. Push to the branch (git push origin feature/YourFeature).
+
+5. Open a Pull Request.
+
 
 ## 📬 Contact
 
@@ -92,8 +98,3 @@ For any queries or collaborations, feel free to connect:
 📧 Email: vaishnaviparodkar@gmail.com
 🔗 GitHub: [@vaishnavi-parodkar](https://github.com/vaishnavi-parodkar)
 
-4. Make your changes and commit (git commit -m 'Add your feature').
-
-5. Push to the branch (git push origin feature/YourFeature).
-
-6. Open a Pull Request.
