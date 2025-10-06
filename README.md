@@ -2,7 +2,7 @@
 
 Vault-to-Learn is a web application that provides study resources such as notes and videos. It combines a simple, responsive frontend with a lightweight Node.js backend for serving resources efficiently.
 
-# 📂 Project Structure
+## 📂 Project Structure
 ```bash
 Vault-to-Learn/
 ├── HTML/               # Frontend HTML files
@@ -15,7 +15,7 @@ Vault-to-Learn/
 └── README.md
 ```
 
-# ✨ Features
+## ✨ Features
 
 - View study resources including notes and videos.
 
@@ -27,7 +27,7 @@ Vault-to-Learn/
 
 - Node.js backend with Express and CORS for serving resources.
 
-# 🛠 Technologies Used
+## 🛠 Technologies Used
 
 - Frontend: HTML, CSS, JavaScript
 
@@ -37,7 +37,7 @@ Vault-to-Learn/
 
 - Deployment: Vercel
 
-# 🚀 Installation & Running Locally
+## 🚀 Installation & Running Locally
 
 1. Clone the repository:
 
@@ -63,10 +63,10 @@ node backend/server.js
 Go to http://localhost:3000 in your browser.
 
 
-# 🖼 Screenshots
+## 🖼 Screenshots
 
 
-# 📝 How to Use
+## 📝 How to Use
 
 - Open the homepage.
 
@@ -77,14 +77,23 @@ Go to http://localhost:3000 in your browser.
 (Future updates can include search/filter options.)
 
 
-# 🤝 Contributing
+## 🤝 Contributing
 
 1. Fork the repository.
 
 2. Create a new branch (git checkout -b feature/YourFeature).
 
-3. Make your changes and commit (git commit -m 'Add your feature').
 
-4. Push to the branch (git push origin feature/YourFeature).
+## 📬 Contact
 
-5. Open a Pull Request.
+For any queries or collaborations, feel free to connect:
+
+**Vaishnavi Parodkar**  
+📧 Email: vaishnaviparodkar@gmail.com
+🔗 GitHub: [@vaishnavi-parodkar](https://github.com/vaishnavi-parodkar)
+
+4. Make your changes and commit (git commit -m 'Add your feature').
+
+5. Push to the branch (git push origin feature/YourFeature).
+
+6. Open a Pull Request.
